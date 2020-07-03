@@ -19,31 +19,31 @@
     </div>
     <!-- //banner -->
         <div class="swiper-container" id="swiper1">
-            <div id="mobileLogo">
+            <div id="mobile-logo">
             <img  style="width:15%" src="./img/logo.png" alt="logo">
-            <a id="mobileMenuBtn" class="toggle-nav" href="#">&#9776;</a>
+            <a id="mobile-menu-btn" class="toggle-nav" href="#">&#9776;</a>
             </div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="d-none d-md-block bg-image overlay-dark preload animated infinite fadeIn"
                         style="background-image: url('./img/banner2.jpg')">
                     </div>
-                    <img class="d-md-none mobileBanner" src="./img/banner2.jpg" alt="">
-                    <span>我是小小畫家</span>
+                    <img class="d-md-none mobile-banner" src="./img/banner2.jpg" alt="">
+                    <span class="banner-title">我是小小畫家</span>
                 </div>
                 <div class="swiper-slide">
                     <div class="d-none d-md-block bg-image overlay-dark preload"
                         style="background-image: url('./img/banner.jpg');">
                     </div>
-                    <img class="d-md-none mobileBanner" src="./img/banner.jpg" alt="">
-                    <span>學會自己刷牙</span>
+                    <img class="d-md-none mobile-banner" src="./img/banner.jpg" alt="">
+                    <span class="banner-title">學會自己刷牙</span>
                 </div>
                 <div class="swiper-slide">
                     <div class="d-none d-md-block bg-image overlay-dark preload"
                         style="background-image: url('./img/banner3.jpg');">
                     </div>
-                    <img class="d-md-none mobileBanner" src="./img/banner3.jpg" alt="">
-                    <span>睡得好香甜</span>
+                    <img class="d-md-none mobile-banner" src="./img/banner3.jpg" alt="">
+                    <span class="banner-title">睡得好香甜</span>
                 </div>
 
             </div>
@@ -52,32 +52,32 @@
         </div>
 
     <nav>
-        <ul >
-            <li><a href="#about" class="scroll">關於百禾</a>
-                <img style=width:50px;height:50px; src="./img/pink.png" alt="">
+        <ul class="menu">
+            <li><a class="menu-item" href="#about" class="scroll">關於百禾</a>
+                <img class="menu-icon" style=width:50px;height:50px; src="./img/pink.png" alt="">
             </li>
-            <li><a href="#classmate">課程特色</a>
-                <img style=width:50px;height:50px; src="./img/blue.png" alt="">
+            <li><a class="menu-item" href="#classmate">課程特色</a>
+                <img class="menu-icon" style=width:50px;height:50px; src="./img/blue.png" alt="">
             </li>
-            <li><a href="#lunch">餐點安排</a>
-                <img style=width:50px;height:50px; src="./img/perple.png" alt="">
+            <li><a class="menu-item" href="#lunch">餐點安排</a>
+                <img class="menu-icon" style=width:50px;height:50px; src="./img/perple.png" alt="">
             </li>
             <img id="logo" style="width:15%" src="./img/logo.png" alt="logo">
-            <li><a href="#space">活動空間</a>
-                <img style=width:50px;height:50px; src="./img/green.png" alt="">
+            <li><a class="menu-item" href="#space">活動空間</a>
+                <img class="menu-icon" style=width:50px;height:50px; src="./img/green.png" alt="">
             </li>
-            <li><a href="#space">使用設備</a>
-                <img style=width:50px;height:50px; src="./img/yellow.png" alt="">
+            <li><a class="menu-item" href="#space">使用設備</a>
+                <img class="menu-icon" style=width:50px;height:50px; src="./img/yellow.png" alt="">
             </li>
-            <li><a href="#peiho">聯絡我們</a>
-                <img style=width:50px;height:50px; src="./img/orange.png" alt="">
+            <li><a class="menu-item" href="#peiho">聯絡我們</a>
+                <img class="menu-icon" style=width:50px;height:50px; src="./img/orange.png" alt="">
             </li>
         </ul>
     </nav>
     
         
     <main>
-        <section  class="about-background" > 
+        <section class="about-background" > 
                 <h2 id="about"><img style="width:50px" src="./img/concept.png" alt="">理念</h2>
                 <P>在遊戲中學習，在學習中成長</P>
                 <P>讓孩子在優雅舒適的環境成長</P>
@@ -156,7 +156,7 @@
             </div>        
         </section>
 
-        <section class="lunch-background">            
+        <section class="lunch-background mobile-background">            
             <h2 id="lunch"><img style="width:50px" src="./img/lunch.png" alt="">餐點</h2>               
             <P>使用大量時令蔬菜，烹煮時不再多加調味，讓孩子吃得營養又健康</P>
             <div class="container">
@@ -197,9 +197,9 @@
                     <div class="swiper-slide" style="background-image:url(./img/5.jpg)"></div>
                     <div class="swiper-slide" style="background-image:url(./img/6.jpg)"></div>
                     <div class="swiper-slide" style="background-image:url(./img/7.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(./images/nature-8.jpg)"></div>
+                    <!-- <div class="swiper-slide" style="background-image:url(./images/nature-8.jpg)"></div>
                     <div class="swiper-slide" style="background-image:url(./images/nature-9.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(./images/nature-10.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./images/nature-10.jpg)"></div> -->
                 </div>
             </div>      
         </section>
@@ -249,19 +249,34 @@
     
     <script>
     $(function() {
+        //loading使用（scrollbar先鎖住，後開放）
         if ($(document).height() > $(window).height()) {
-        $("html").addClass("noscroll");
+            $("html").addClass("noscroll");
         }else{
-        $("html").addClass("fixWindow"); 
+            $("html").addClass("fixWindow"); 
         }
-      setTimeout(function(){
+
+        //網頁載入時loading三秒
+        setTimeout(function(){
         $('#loading').css('display','none');
             if ($(document).height() > $(window).height()) {
                 $("html").removeClass("noscroll");
             }else{
                 $("html").removeClass("fixWindow");
             }
-      },3000);
+        },3000);
+
+        $('#mobile-menu-btn').on('click',  function(e){
+            e.preventDefault();
+            $('body').removeClass('menu-hide');
+            $('body').toggleClass('menu-show');
+        });
+
+        $('.menu-item').on('click',  function(e){
+            // e.preventDefault();
+            $('body').removeClass('menu-show');
+            $('body').addClass('menu-hide');
+        });
 
         var swiper = new Swiper('#swiper1', {
             spaceBetween: 0,
