@@ -170,7 +170,7 @@ p{
 
 #swiper2{   
     width: 100%;
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 50px;
     
 }
@@ -187,6 +187,7 @@ p{
 .blue-blackground{
     width: 100%;
     background-color: #bae1f0;
+    position: relative;
 }
 
 .container{
@@ -204,11 +205,14 @@ p{
 }
 
 #wheel{
-    float: left;
+    position: absolute;
+    bottom: 2px;
 }
 
 #top{
-    float: right;
+    position: absolute;
+    bottom: 150px;
+    right: 80px;
     
 }
 
@@ -256,7 +260,7 @@ html.fixWindow {
     width: 100%;
 }
 
- #mobile-logo{
+#mobile-logo{
     display: none;
 }
 
@@ -309,8 +313,8 @@ html.fixWindow {
         align-self: center;
         line-height: 20px;
         margin-right:10px;
-        color:black;
-        border: 3px solid black!important;
+        color:#43c0ac;
+        border: 3px solid #43c0ac!important;
         border-radius:5px;
         padding-left:3px;
         padding-right:3px;
@@ -369,6 +373,13 @@ html.fixWindow {
     max-height: 0px;
   }
 
+  #wheel{
+      display: none;
+  }
+
+  #top{
+      display: none;
+  }
 
 }
 
