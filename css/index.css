@@ -132,13 +132,19 @@ h2{
     justify-content:center;
     align-items: flex-end;
     padding-top: 50px;
+    padding-bottom: 15px;
+    scroll-margin-top: 130px;
 }
 
 p{
     font-size: 18px;
-    line-height: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+}
+
+.classmate{
+    width:1140px;
+    margin: auto;
 }
 
 .classmate-background{
@@ -278,6 +284,22 @@ html.fixWindow {
 }
 
 @media screen and (max-width: 600px) {
+    h2{
+        scroll-margin-top: 0;
+    }
+    
+    .goals{
+        width: 75vw;
+        margin: auto;
+        word-break: break-all;
+    }
+    
+    .classmate{
+        width: 75vw;
+        margin: auto;
+        word-break: break-all; 
+    }
+    
     /* LOGO調整位置 */
     #logo{
         display:none;
